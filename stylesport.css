@@ -1,0 +1,602 @@
+/*---------------------NAVBAR---------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(77, 77, 77);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+li {
+float: left;
+border-right:1px solid #bbb;
+}
+
+li:last-child {
+border-right: none;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: rgb(170, 47, 47);
+}
+
+
+/*---------------------ABOUT ME CARD---------------*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+/*---------------------POP MODAL---------------*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #ff8a8a;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #ff8a8a;
+    color: white;
+  }
+
+/*---------------------TEXTS---------------*/
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.h2r {
+    text-align: right;
+}
+
+.h2l {
+    color: #DDDDDD;
+}
+
+#hlinks {
+    text-align: center;
+}
+
+.butl {
+    text-align: right;
+}
+/*---------------------SPLITTERS---------------*/
+
+.section {
+    background-color: rgb(170, 47, 47); 
+    display:flex;
+    /*background: url(Image\ Resources/gradient.png);
+    background-size:100% auto;*/
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.sub-section {
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+.coolSplit {
+    direction: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*---------------------ABOUT ME SECTION---------------*/
+
+.prophoto{
+    width: 30%;
+    border-radius: 50%;
+    border: rgb(0, 0, 0) 5px solid;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.addenda{
+    width: 40%;
+    height: 40%;
+    border: rgb(0, 0, 0) 5px solid;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.aboutMe{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: url(Image\ Resources/aboutme2.jpg);
+    background-size:100% auto;
+}
+
+.aboutMe .aboutInfo {
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.projects{
+    display: flex;
+    /*margin-top: 1%;*/
+    margin-bottom: 1%;
+    background: url(Image\ Resources/xmlExample.png);
+    background-size:100%;
+}
+
+.projectsInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.descrInfoC {
+    padding: 15px 10px;
+    background-color: #eeefff;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.descrInfo {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 1;
+}
+
+.txt1 {
+    background-color: "#D9EAF8";
+    margin: "50px";
+    border-radius: "15px"; 
+    padding: "30px";
+    color: #DDDDDD;
+}
+
+/*---------------------JOBS---------------*/
+.Jobs {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.jobIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.jobLogo {
+    width: 200px;
+    text-align: center;
+}
+
+.box {
+    padding: 2em;
+    display: block;
+    width: 50%;
+    height: 450px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient(
+       white, white 50%, #333 50%, #333
+    );
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+
+.box p {
+    font-weight: 400;
+}
+
+.box:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.box:hover p {
+    color: #ffffff;
+}
+
+.box:hover p span {
+    color: white;
+}
+
+.box:hover h3 {
+    color: #999;
+}
+  
+@keyframes up-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 1.5em; }
+    100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 2.5em; }
+    100% { padding-top: 2em; }
+}
+/*---------------------PROJECTS---------------*/
+
+.proContainer {
+    position: relative;
+    text-shadow: #ffffff;
+    background-color: rgb(77, 77, 77);
+    margin-top: 3%;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .collapsible {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .collapsible:hover {
+    background-color: rgb(170, 47, 47);
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .colContent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+/*---------------------TECHNOLOGIES---------------*/
+.Tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+
+.techInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+
+
+.techInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    width: 50%;
+    height: 300px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient(
+       white, white 50%, #333 50%, #333
+    );
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+
+  
+.techInfo:hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.techInfo:hover p {
+    color: #ffffff;
+}
+
+.techInfo:hover p span {
+    color: white;
+}
+
+.techInfo:hover h3 {
+    color: #999;
+}
+
+/*---------------------TITLE---------------*/
+#title {
+    display: flex;
+    flex-direction: column;
+    background: url(Image\ Resources/titleScreen2.jpg);
+    background-size:100% auto;
+    padding: 140px 160px;
+}
+
+.structure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*---------------------BODY BORDER---------------*/
+body{
+    /*font-family:'Roboto',sans-serif;*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*---------------------BUTTON TEST---------------*/
+a.button2{
+    display: inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+a.button2:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+a.button2:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+.share-button {
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (max-width:30em){
+    a.button2{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+/*---------------------SOCIAL MEDIA---------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.socialmedia {
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.4;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+.fa-linkedin {
+background: rgb(37, 37, 37);
+color: white;
+}
+
+/*---------------------WORK IN PROGRESS---------------*/
+.gallery {
+    border: 1px solid #ccc;
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+* {
+    box-sizing: border-box;
+}
+  
+.wip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*---------------------CONTACT INFO---------------*/
+.social {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(77, 77, 77);
+}
+
+.contactInfo{
+    color: rgb(179, 179, 179);
+    font-size: 15px;
+    text-align: end;
+    padding: 5px 5px;
+}
+
+
+/*---------------------TITLE2---------------*/
+div.background {
+background: url(Image\ Resources/titleScreen2.jpg);
+background-size: 100% auto;
+border: 2px solid black;
+padding: 150px 10px;
+}
+
+div.transbox {
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.6;
+}
+
+div.transbox p {
+margin: 5%;
+font-size: 25px;
+font-weight: bold;
+color: #000000;
+text-align: center;
+}
+
+@media (max-width: 800px) {
+.aboutMe {
+    flex-direction: column;
+}
+.projects {
+    flex-direction: column;
+}
+.wip {
+    flex-direction: column;
+}
+.jobIcons {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 550px) {
+.Tech {
+    flex-direction: column;
+}
+.jobIcons {
+    flex-direction: column;
+}
+}
