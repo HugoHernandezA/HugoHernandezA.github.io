@@ -3,18 +3,21 @@ var modal = document.getElementById("myModal");
 var modalLumik = document.getElementById("myModalLumik");
 var modalLA = document.getElementById("myModalLA");
 var modalLL = document.getElementById("myModalLL");
+var modalCon = document.getElementById("myModalContact");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btnLumik = document.getElementById("myBtnLumik");
 var btnLA = document.getElementById("myBtnLA");
 var btnLL = document.getElementById("myBtnLL");
+var btnCon = document.getElementById("myBtnCon");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var spanLumik = document.getElementsByClassName("close")[1];
 var spanLA = document.getElementsByClassName("close")[2];
 var spanLL = document.getElementsByClassName("close")[3];
+var spanCon = document.getElementsByClassName("close")[4];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -28,6 +31,9 @@ btnLA.onclick = function() {
 }
 btnLL.onclick = function() {
   modalLL.style.display = "block";
+}
+btnCon.onclick = function() {
+  modalCon.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -43,6 +49,9 @@ spanLA.onclick = function() {
 spanLL.onclick = function() {
   modalLL.style.display = "none";
 }
+spanCon.onclick = function() {
+  modalCon.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -57,6 +66,9 @@ window.onclick = function(event) {
   }
   if (event.target == modalLL) {
     modalLL.style.display = "none";
+  }
+  if (event.target == modalCon) {
+    modalCon.style.display = "none";
   }
 }
 
